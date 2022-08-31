@@ -9,38 +9,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    theme: {
-      extend: {
-        gridTemplateRows: {
-          '[auto,auto,1fr]': 'auto auto 1fr',
-        },
-      },
-    },
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-<!--Navbar Starts-->
-    
-
-
-<!-- Navbar ICONS ENDS -->    
 
 
 
-<div class="bg-white">
+
+
+
+<div class="bg-white mt-8">
 
     <nav aria-label="Breadcrumb" class="mt-2">
         <ol role="list" class="max-w-2xl  mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -71,22 +46,22 @@
     <div class="w-full">
         <div class=" sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto    mt-16  md:block lg:flex  " >
 
-            <div class="w-full md:flex flex flex-col-reverse sm:items-center sm:mb-8 mb-8 items-center sm:flex sm:flex-col-reverse md:flex-row sm:flex-col  lg:flex  lg:flex-row  md:justify-evenly md:mb-4 lg:justify-between mr-4 top-20  md:items-start lg:items-start"  x-data="{images: 'image1'}">
+            <div class="w-full md:flex flex flex-col-reverse sm:items-center sm:mb-8 mb-8 items-center sm:flex sm:flex-col-reverse md:flex-row sm:flex-col   lg:flex  lg:flex-row  md:justify-evenly md:mb-4 lg:justify-between mr-4 top-20  md:items-start lg:items-start"  x-data="{images: 'image1'}">
               <!--images gallery-->
-              <div class="lg:flex lg:flex-col  flex-row flex  sm:flex-row sm:flex  md:flex-col md:flex-row items-baseline justify-center ">
-                <div @click.prevent="images = 'image1'"  :class="{'border-slate-900': images === 'image1' } "  class="cursor-pointer w-20 ml-4 block border-2 border-slate-100">
+              <div class="lg:flex lg:flex-col  flex-row flex  sm:flex-row sm:flex  md:flex-col md:flex-row items-baseline justify-center gap-2">
+                <div @click.prevent="images = 'image1'"  :class="{'border-slate-900': images === 'image1' } "  class="cursor-pointer w-20 ml-0 sm:ml-0 md:ml-4 lg:ml-4  block border-2 border-slate-100">
                     <img src="https://www.fnp.com/images/pr/l/v20201229000914/fragrant-mix-of-flowers-in-fishbowl-vase_1.jpg" class="h-20 mx-auto block object-cover" alt="">
                 </div>
 
-                <div @click.prevent="images = 'image2'" :class="{'border-slate-900': images === 'image2' } " class="cursor-pointer w-20 ml-4 block border-2 border-slate-100">
+                <div @click.prevent="images = 'image2'" :class="{'border-slate-900': images === 'image2' } " class="cursor-pointer w-20 ml-0 sm:ml-0 md:ml-4 lg:ml-4 block border-2 border-slate-100">
                     <img src="https://www.fnp.com/images/pr/l/v20201211022856/milt-sansevieria-in-abstract-white-pot_1.jpg" class="h-20 block mx-auto object-cover" alt="">
                 </div>
 
-                <div @click.prevent="images = 'image3'" :class="{'border-slate-900': images === 'image3' } " class="cursor-pointer w-20 ml-4 block border-2 border-slate-100 ">
+                <div @click.prevent="images = 'image3'" :class="{'border-slate-900': images === 'image3' } " class="cursor-pointer w-20 ml-0 sm:ml-0 md:ml-4 lg:ml-4 block border-2 border-slate-100 ">
                     <img src="https://www.fnp.com/images/pr/l/v20180604102052/rose-repose_1.jpg" class="h-20 mx-auto block object-cover" alt="">
                 </div>
 
-                <div @click.prevent="images = 'image4'" :class="{'border-slate-900': images === 'image4' } " class="cursor-pointer w-20 ml-4 block border-2 border-slate-100">
+                <div @click.prevent="images = 'image4'" :class="{'border-slate-900': images === 'image4' } " class="cursor-pointer w-20 ml-0 sm:ml-0 md:ml-4 lg:ml-4 block border-2 border-slate-100">
                     <img src="https://m.media-amazon.com/images/I/61Fs0zyyuHS._SL1500_.jpg" class="h-20 block mx-auto object-cover" alt="">
                 </div>
             </div>
@@ -167,33 +142,17 @@
                                 </div>
 
                                 <div class="flex items-center ">
-                                    <!-- <input type="radio" name="size" value="1"  class="hidden peer" id="size1" required>
-                                    <label for="size1" class="mx-2 block w-20 h-10 rounded bg-indigo-400 peer-checked:border-2 peer-checked:border-slate-900">
-                                        XS
-                                    </label>
-                            
-                                
-                                
-                                <input type="radio" name="size" value="2" class="hidden peer" id="size2" >
-                                <label for="size2" class="mx-2 block w-20 h-10 rounded bg-indigo-400 peer-checked:border-2 peer-checked:border-slate-900">
-                                    S
-                                </label> -->
-            <!-- 
-                                <input type="radio" name="cover" class="peer 1" id="cover1">
-                                <label for="cover1" class="peer-checked:text-blue-900">Cover 1</label>
-
-                                <input type="radio" name="cover" class="peer 2" id="cover2">
-                                <label for="cover2" class="peer-checked:text-blue-900">Cover 2</label> -->
+                    
 
                             </div>
                             </div>
                         </div>
 
                 <ul class="list-disc mt-8">
-                    <li class="mt-2">Digital noise cancelling: Industry leading Active Noise Cancellation (ANC) lends a personalized, virtually soundproof experience at any situation</li>
-                    <li class="mt-2">Voice assistant: Alexa, Google Assistant & Siri enabled (In-built) for voice access to music, information and more. Activate with a simple touch</li>
-                    <li class="mt-2">Speak-to-chat: Headphones use an array of smart technologies to create a seamless, hands-free listening experience. For eg, simply start speaking to automatically pause</li>
-                    <li class="mt-2">Wearing Detection: Proximity sensor and two acceleration sensors in your headphones can detect whether you're wearing them or not, then adapt playback</li>
+                    <li class="mt-2 ml-2 sm:ml-2">Digital noise cancelling: Industry leading Active Noise Cancellation (ANC) lends a personalized, virtually soundproof experience at any situation</li>
+                    <li class="mt-2 ml-2 sm:ml-2">Voice assistant: Alexa, Google Assistant & Siri enabled (In-built) for voice access to music, information and more. Activate with a simple touch</li>
+                    <li class="mt-2 ml-2 sm:ml-2">Speak-to-chat: Headphones use an array of smart technologies to create a seamless, hands-free listening experience. For eg, simply start speaking to automatically pause</li>
+                    <li class="mt-2 ml-2 sm:ml-2">Wearing Detection: Proximity sensor and two acceleration sensors in your headphones can detect whether you're wearing them or not, then adapt playback</li>
 
                 </ul>
 
